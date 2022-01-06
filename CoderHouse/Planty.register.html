@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./foto/favicon-32x32.png">    
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">    
+    <title>Planty</title>
+</head>
+<body class="bodyRegister">
+    <main>
+        <h2>
+            Registrarse
+        </h2>
+        <br>
+        <form action="#registro">
+            <fieldset>
+                <legend>Crear cuenta</legend>
+                <br>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="name" placeholder="Nombre">
+                </div>  
+                <br>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <br>
+                <div>
+                    <label for="email">* E-mail</label>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <br>
+                <div>
+                    <label for="nacionalidad">Nacionalidad</label>
+                    <select name="nacionalidad" id="">
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="colombia">Colombia</option>
+                    </select>
+                </div>   
+                <br>
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" placeholder="Contrseña">
+                </div>  
+                <br>
+                <div>
+                    <label for="comentario">Comentarios</label>
+                    <br>
+                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <br>
+                    <br>
+                    <input type="reset" value="Borrar">
+                    <br>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+.padre{
+    width: 95%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer"
+        ;
+}
+.header {
+    background-color: yellow;
+    grid-area: header;
+    display: flex;  
+    flex-direction: row; 
+    justify-content: space-between;
+ }
+ 
+.main {
+    background-color: greenyellow;
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+    color: white;
+    background-color: black;
+}
